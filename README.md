@@ -1,4 +1,5 @@
-# CVPR16-DeepBit
+# DeepBit-VPR
+
 
 Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
 
@@ -9,15 +10,6 @@ Created by Kevin Lin, Jiwen Lu, Chu-Song Chen, Jie Zhou
 We propose a new unsupervised deep learning approach to learn compact binary descriptor. We enforce three criterions on binary codes which are learned at the top layer of our network: 1) minimal loss quantization, 2) evenly distributed codes and 3) rotation invariant bits. Then, we learn the parameters of the networks with a back-propagation technique. Experimental results on three different visual analysis tasks including image matching, image retrieval, and object recognition demonstrate the effectiveness of the proposed approach.
 
 The details can be found in the following [CVPR 2016 paper](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvpr16-deepbit.pdf)
-
-
-## Citation
-
-If you find DeepBit useful in your research, please consider citing:
-
-    Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
-    Kevin Lin, Jiwen Lu, Chu-Song Chen and Jie Zhou
-    IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 
 
 ## Prerequisites
@@ -101,12 +93,21 @@ DeepBit models in the paper:
     - 64-bit model: [MEGA](https://mega.nz/#!pMFgQaJR!-kybfCeXDLvaD96NIRTzDZBMgET6x5SVBJ5H3HKQLrw), [Dropbox](https://www.dropbox.com/s/4nrhtsq7q2offx4/DeepBit64_final_iter_1.caffemodel?dl=0)
 
 
-## Experiments on Descriptor Matching and Object Recognition
+## Citations
 
-comming soon...
+If you find DeepBit useful in your research, please consider citing:
+
+    Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
+    Kevin Lin, Jiwen Lu, Chu-Song Chen and Jie Zhou
+    IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 
 
-## Contact
 
-Please feel free to leave suggestions or comments to Kevin Lin (kevinlin311.tw@iis.sinica.edu.tw), Jiwen Lu (lujiwen@tsinghua.edu.cn) or Chu-Song Chen (song@iis.sinica.edu.tw)
+## Enquiries, Question and Comments
+
+If you have any further enquiries, question, or comments, please contact 
+corsmal-challenge@qmul.ac.uk If you would like to 
+file a bug report or a feature request, use the Github issue tracker.
+
+Please contact the authors of DeepBit for specific feel free to leave suggestions or comments to Kevin Lin (kevinlin311.tw@iis.sinica.edu.tw), Jiwen Lu (lujiwen@tsinghua.edu.cn) or Chu-Song Chen (song@iis.sinica.edu.tw)
 
