@@ -48,66 +48,37 @@ Then, you will get the `mAP` result as follows.
 Note: CIFAR10 dataset is split into training and test sets, with 50,000 and 10,000 images, respectively. During retrieval process, the 50,000 training images are treated as the database. We use the 10,000 test images as the query samples.
 
 
-## Train DeepBit on CIFAR10
-
-Simply run the following command to train DeepBit:
-
-    $ cd /examples/deepbit-cifar10-32
-    $ ./train.sh
-
-
-The training process takes a few hours on a desktop with Titian X GPU.
-You will finally get your model named `DeepBit32_final_iter_1.caffemodel` under folder `/examples/deepbit-cifar10-32/`
-
-To use the model, modify the `model_file` in `run_cifar10.m` to link your model:
-
-```
-    model_file = './YOUR/MODEL/PATH/filename.caffemodel';
-```
-
-Launch matlab, run `run_cifar10.m` and test the model!
-    
-    >> run_cifar10
 
 
 
-## Resources
+
+We extract DeepBit image features using the 32-bit model pre-trained on Cifar10: [MEGA](https://mega.nz/#!kFd3RZbR!jhhlgfd-eOV4YpflBcZ3lE3UmeQqJFLuds1fLdIKS_0)  | [Dropbox](https://www.dropbox.com/s/z815s0cjdipwr5b/DeepBit32_final_iter_1.caffemodel?dl=0)
 
 **Note**: This documentation may contain links to third party websites, which are provided for your convenience only. Third party websites may be subject to the third party’s terms, conditions, and privacy statements.
 
-If the automatic "fetch_data" fails, you may manually download the resouces from:
-
-0. For `./prepare.sh`:
-    - VGGNet pre-trained on ILSVC12: [MEGA](https://mega.nz/#!0IsmmKTS!vYrCmGODqCRoSGhbPwMkK4ohJzFNu3WblNijnsvTZD0), [Dropbox](https://www.dropbox.com/s/yqkm2tgqonditgs/VGG_ILSVRC_16_layers.caffemodel?dl=0)
-
-    - DeepBit 32bit model pre-trained on cifar10: [MEGA](https://mega.nz/#!kFd3RZbR!jhhlgfd-eOV4YpflBcZ3lE3UmeQqJFLuds1fLdIKS_0), [Dropbox](https://www.dropbox.com/s/z815s0cjdipwr5b/DeepBit32_final_iter_1.caffemodel?dl=0)
-
-    - CIFAR10 dataset (jpg format): [MEGA](https://mega.nz/#!RENV1bhZ!x0uFnAkqUSTJzKr6HzeeNV9mtDjlgQ0x6ZaXfpxbJkw), [Dropbox](https://www.dropbox.com/s/f7q3bbgvat2q1u2/cifar10-dataset.zip?dl=0), [BaiduYun](http://pan.baidu.com/s/1pKsSK7h)
-
-
-DeepBit models in the paper:
- 
-0. The proposed models trained on CIFAR10:
-    - 16-bit model: [MEGA](https://mega.nz/#!lRswAKTY!OsaU4vyrRR3N8xl-rJsOE-w7h5PB6K7Dv35NrHwvGLo), [Dropbox](https://www.dropbox.com/s/cwzfelw8opho1pq/DeepBit16_final_iter_1.caffemodel?dl=0)
-    - 32-bit model: [MEGA](https://mega.nz/#!kFd3RZbR!jhhlgfd-eOV4YpflBcZ3lE3UmeQqJFLuds1fLdIKS_0), [Dropbox](https://www.dropbox.com/s/z815s0cjdipwr5b/DeepBit32_final_iter_1.caffemodel?dl=0)
-    - 64-bit model: [MEGA](https://mega.nz/#!pMFgQaJR!-kybfCeXDLvaD96NIRTzDZBMgET6x5SVBJ5H3HKQLrw), [Dropbox](https://www.dropbox.com/s/4nrhtsq7q2offx4/DeepBit64_final_iter_1.caffemodel?dl=0)
-
-
 ## Citations
 
-If you find DeepBit useful in your research, please consider citing:
+If you use DeepBit in your research, please acknowledge:
+```
+Unsupervised Deep Learning of Compact Binary Descriptors
+K. Lin, J. Lu, C-S. Chen, J. Zhou
+IEEE Transactions on Pattern Recognition and Machine Intelligence, 
+vol. 41, n.6, pp. 1501--1514, Jun, 2019
+```
 
-    Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
-    Kevin Lin, Jiwen Lu, Chu-Song Chen and Jie Zhou
-    IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
-
-
+```
+Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks
+K. Lin, J. Lu, C-S. Chen, J. Zhou
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR),
+Las Vegas, NV, USA, 27-30 Jun, 2016
+```
 
 ## Enquiries, Question and Comments
 
-If you have any further enquiries, question, or comments, please contact 
-corsmal-challenge@qmul.ac.uk If you would like to 
-file a bug report or a feature request, use the Github issue tracker.
+If you have any further enquiries, question, or comments about the MATLAB scripts for obtaining the image features of the dataset used in Xompero et al. [1], please contact a.xompero@qmul.ac.uk. 
 
-Please contact the authors of DeepBit for specific feel free to leave suggestions or comments to Kevin Lin (kevinlin311.tw@iis.sinica.edu.tw), Jiwen Lu (lujiwen@tsinghua.edu.cn) or Chu-Song Chen (song@iis.sinica.edu.tw)
+Please contact the authors of DeepBit for technical enquiries, questions, or comments about the method:
+* Kevi Lin (kevinlin311.tw@iis.sinica.edu.tw), 
+* Jiwen Lu (lujiwen@tsinghua.edu.cn) 
+* Chu-Song Chen (song@iis.sinica.edu.tw)
 
